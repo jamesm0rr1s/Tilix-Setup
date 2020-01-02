@@ -111,6 +111,7 @@ dconf write /com/gexperts/Tilix/keybindings/session-switch-to-terminal-9 "'<Alt>
 # Use tabs for sessions
 dconf write /com/gexperts/Tilix/use-tabs "true"
 dconf write /com/gexperts/Tilix/tab-position "'bottom'"
+dconf write /com/gexperts/Tilix/quake-tab-position "'bottom'"
 dconf write /com/gexperts/Tilix/keybindings/session-name "'<Alt>r'"
 
 # Switching and reordering sessions
