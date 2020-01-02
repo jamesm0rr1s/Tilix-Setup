@@ -61,9 +61,8 @@ dconf write /com/gexperts/Tilix/keybindings/terminal-find-previous "'<Primary>h'
 dconf write /com/gexperts/Tilix/keybindings/terminal-save "'<Primary>s'"
 
 # Add a new terminal
-dconf write /com/gexperts/Tilix/keybindings/session-add-auto "'<Alt>n'"
 dconf write /com/gexperts/Tilix/keybindings/session-add-down "'<Alt>d'"
-dconf write /com/gexperts/Tilix/keybindings/session-add-right "'<Alt>r'"
+dconf write /com/gexperts/Tilix/keybindings/session-add-right "'<Alt>n'"
 
 # Add a new session
 dconf write /com/gexperts/Tilix/keybindings/app-new-session "'<Alt>s'"
@@ -89,8 +88,8 @@ dconf write /com/gexperts/Tilix/keybindings/session-resize-terminal-left "'<Shif
 dconf write /com/gexperts/Tilix/keybindings/session-resize-terminal-right "'<Shift><Alt>Right'"
 
 # Switch to another terminal
-dconf write /com/gexperts/Tilix/keybindings/session-switch-to-next-terminal "'<Alt>k'"
-dconf write /com/gexperts/Tilix/keybindings/session-switch-to-previous-terminal "'<Alt>j'"
+dconf write /com/gexperts/Tilix/keybindings/session-switch-to-next-terminal "'<Alt>u'"
+dconf write /com/gexperts/Tilix/keybindings/session-switch-to-previous-terminal "'<Alt>h'"
 
 # Switch to another terminal by direction
 dconf write /com/gexperts/Tilix/keybindings/session-switch-to-terminal-up "'<Alt>Up'"
@@ -109,11 +108,16 @@ dconf write /com/gexperts/Tilix/keybindings/session-switch-to-terminal-7 "'<Alt>
 dconf write /com/gexperts/Tilix/keybindings/session-switch-to-terminal-8 "'<Alt>8'"
 dconf write /com/gexperts/Tilix/keybindings/session-switch-to-terminal-9 "'<Alt>9'"
 
+# Use tabs for sessions
+dconf write /com/gexperts/Tilix/use-tabs "true"
+dconf write /com/gexperts/Tilix/tab-position "'bottom'"
+dconf write /com/gexperts/Tilix/keybindings/session-name "'<Alt>r'"
+
 # Switching and reordering sessions
-dconf write /com/gexperts/Tilix/keybindings/win-switch-to-next-session "'<Alt>h'"
-dconf write /com/gexperts/Tilix/keybindings/win-switch-to-previous-session "'<Alt>u'"
-dconf write /com/gexperts/Tilix/keybindings/win-reorder-next-session "'<Primary><Alt>h'"
-dconf write /com/gexperts/Tilix/keybindings/win-reorder-previous-session "'<Primary><Alt>u'"
+dconf write /com/gexperts/Tilix/keybindings/win-switch-to-next-session "'<Alt>k'"
+dconf write /com/gexperts/Tilix/keybindings/win-switch-to-previous-session "'<Alt>j'"
+dconf write /com/gexperts/Tilix/keybindings/win-reorder-next-session "'<Primary><Alt>k'"
+dconf write /com/gexperts/Tilix/keybindings/win-reorder-previous-session "'<Primary><Alt>j'"
 
 # Close the terminal
 dconf write /com/gexperts/Tilix/keybindings/terminal-close "'<Alt>e'"
